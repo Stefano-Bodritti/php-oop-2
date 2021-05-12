@@ -15,7 +15,7 @@ require "classes.php";
     <h2>Categoria Libri</h2>
     <ul>
       <li><?php echo $libro->name; ?></li>
-      <li><?php echo $libro->ID; ?></li>
+      <li>sconto: <?php echo $libro->getDiscount(); ?>%</li>
       <li><?php echo $libro->price; ?> euro</li>
       <li><?php echo $libro->description; ?></li>
       <li><?php echo $libro->pages; ?> pagine</li>
@@ -24,7 +24,7 @@ require "classes.php";
     <h2>Categoria DVD</h2>
     <ul>
       <li><?php echo $DVD1->name; ?></li>
-      <li><?php echo $DVD1->ID; ?></li>
+      <li>sconto: <?php echo $DVD1->getDiscount(); ?>%</li>
       <li><?php echo $DVD1->price; ?> euro</li>
       <li><?php echo $DVD1->description; ?></li>
       <li><?php echo $DVD1->runningTime; ?> minuti</li>
